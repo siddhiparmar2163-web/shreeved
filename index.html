@@ -1,58 +1,400 @@
-[9:53 AM, 10/17/2025] siddhiparmar2163: <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suvarnprashn – Ayurvedic Immunity Booster</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background-color: #f7f4e9;
-      color: #333;
-    }
-    header {
-      background-color: #6b8e23;
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
-    header p {
-  …
-[10:14 AM, 10/17/2025] siddhiparmar2163: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Super Shreeved Suvarna Prashan</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <style>
-  body { font-family: 'Nunito Sans', sans-serif; background: #f7f4e9; margin: 0; }
-  header { background: #6b8e23; text-align: center; color: #fff; padding: 40px 20px; }
-  header img { height: 100px; }
-  header h1 { font-size: 2.5rem; margin-top: 15px; }
-  .price { color: #C9A227; font-weight: 700; font-size: 1.8rem; margin: 10px 0; }
-  .btn-buy { background: #C9A227; border: none; padding: 10px 25px; color: white; border-radius: 5px; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body { 
+    font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(135deg, #f7f4e9 0%, #e8e0c8 100%);
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .lang-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 8px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  }
+  
+  .lang-toggle button {
+    margin: 0 5px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: #6b8e23;
+  }
+  
+  .lang-toggle button.active {
+    background: linear-gradient(135deg, #C9A227 0%, #d4af37 100%);
+    color: white;
+    box-shadow: 0 2px 10px rgba(201, 162, 39, 0.3);
+  }
+
+  header {
+    background: linear-gradient(135deg, #6b8e23 0%, #8fb339 100%);
+    text-align: center;
+    color: #fff;
+    padding: 80px 20px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+    opacity: 0.3;
+  }
+
+  header img.logo {
+    height: 120px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+    animation: fadeInDown 1s ease;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+    margin-top: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    animation: fadeInUp 1s ease;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.95;
+    font-weight: 300;
+  }
+
+  .price-tag {
+    background: linear-gradient(135deg, #C9A227 0%, #d4af37 100%);
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 50px;
+    margin: 25px 0;
+    box-shadow: 0 8px 20px rgba(201, 162, 39, 0.4);
+    animation: pulse 2s infinite;
+  }
+
+  .price {
+    color: white;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+
+  .btn-buy {
+    background: linear-gradient(135deg, #C9A227 0%, #d4af37 100%);
+    border: none;
+    padding: 15px 40px;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(201, 162, 39, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .btn-buy:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(201, 162, 39, 0.5);
+  }
+
+  .hero-image {
+    margin-top: 40px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .hero-image img {
+    max-width: 350px;
+    width: 100%;
+    filter: drop-shadow(0 10px 25px rgba(0,0,0,0.3));
+  }
+
   .lang-en, .lang-gu { display: none; }
   .active-lang { display: block; }
-  section { padding: 60px 20px; }
-  ul { list-style: none; padding-left: 0; }
-  ul li { margin: 10px 0; font-size: 1.15rem; }
-  .gallery img { width: 200px; margin: 10px; border-radius: 10px; border: 2px solid #C9A227; }
-  .review-box { background: white; border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
-  form input, form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; }
-  .btn-submit { background: #C9A227; color: white; border: none; padding: 10px 20px; border-radius: 5px; }
-  footer { background: #6b8e23; color: white; text-align: center; padding: 20px; }
-  .lang-toggle { position: fixed; top: 10px; right: 20px; }
-  .lang-toggle button { margin-left: 10px; padding: 5px 15px; border-radius: 5px; border: none; cursor: pointer; font-weight: 600; }
-  .lang-toggle button.active { background-color: #C9A227; color: black; }
+  
+  section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    color: #6b8e23;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #C9A227, #d4af37);
+    border-radius: 2px;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .benefit-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid transparent;
+  }
+
+  .benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(107, 142, 35, 0.15);
+    border-color: #C9A227;
+  }
+
+  .benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .benefit-card h3 {
+    color: #6b8e23;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  .benefit-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+
+  .gallery {
+    background: white;
+    border-radius: 30px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+  }
+
+  .gallery-item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 3px solid #C9A227;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(201, 162, 39, 0.3);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .reviews-section {
+    background: linear-gradient(135deg, #6b8e23 0%, #8fb339 100%);
+    border-radius: 30px;
+    padding: 60px 40px;
+    color: white;
+  }
+
+  .reviews-section .section-title {
+    color: white;
+  }
+
+  .reviews-section .section-title::after {
+    background: linear-gradient(90deg, #C9A227, #d4af37);
+  }
+
+  .review-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+  }
+
+  .review-box:hover {
+    transform: translateX(10px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  }
+
+  .review-box p {
+    color: #333;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .review-box strong {
+    color: #6b8e23;
+    font-size: 1.2rem;
+  }
+
+  .register-section {
+    background: white;
+    border-radius: 30px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  form input, form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #C9A227;
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.1);
+  }
+
+  .btn-submit {
+    background: linear-gradient(135deg, #6b8e23 0%, #8fb339 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(107, 142, 35, 0.3);
+  }
+
+  .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(107, 142, 35, 0.4);
+  }
+
+  footer {
+    background: linear-gradient(135deg, #4a5f19 0%, #6b8e23 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+  }
+
+  footer a {
+    color: #C9A227;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  footer a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+  }
+
+  .info-banner {
+    background: linear-gradient(135deg, rgba(201, 162, 39, 0.1) 0%, rgba(201, 162, 39, 0.05) 100%);
+    padding: 30px;
+    border-radius: 20px;
+    border-left: 5px solid #C9A227;
+    margin: 40px 0;
+  }
+
+  .info-banner h4 {
+    color: #6b8e23;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .info-banner p {
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  @media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    .price { font-size: 1.8rem; }
+    .section-title { font-size: 2rem; }
+    .benefits-grid { grid-template-columns: 1fr; }
+    section { padding: 50px 15px; }
+  }
 </style>
 </head>
 <body>
@@ -63,86 +405,169 @@
 </div>
 
 <header>
-  <img src="super-shreeved-logo.png" alt="Super Shreeved Logo" />
-  <h1 class="lang-en active-lang">Suvarna Prashan – Ayurvedic Immunity Booster for Kids</h1>
-  <h1 class="lang-gu">સુવર્ણ પ્રાશન – બાળકો માટે આયુર્વેદિક રોગપ્રતિરોધક</h1>
-  <div class="price lang-en active-lang">₹699 only</div>
+  <img class="logo" src="super-shreeved-logo.png" alt="Super Shreeved Logo" />
+  
+  <h1 class="lang-en active-lang">Suvarna Prashan</h1>
+  <h1 class="lang-gu">સુવર્ણ પ્રાશન</h1>
+  
+  <p class="subtitle lang-en active-lang">Ancient Ayurvedic Immunity Booster for Kids</p>
+  <p class="subtitle lang-gu">બાળકો માટે આયુર્વેદિક રોગપ્રતિરોધક</p>
+  
+  <div class="price-tag">
+    <div class="price">₹699</div>
+  </div>
+  
   <button class="btn-buy" onclick="window.open('https://wa.me/919157572163?text=Hello,%20I%20want%20to%20buy%20Suvarnprashn%20for%20₹699','_blank')">
-    <span class="lang-en active-lang">Buy Now via WhatsApp</span>
-    <span class="lang-gu">વૉટ્સએપ દ્વારા ખરીદો</span>
+    <span class="lang-en active-lang">🛒 Buy Now via WhatsApp</span>
+    <span class="lang-gu">🛒 વૉટ્સએપ દ્વારા ખરીદો</span>
   </button>
-  <div style="margin-top: 30px;">
-    <img src="suvarnprashn1.jpg" alt="Suvarnprashn Bottle" width="300" />
+  
+  <div class="hero-image">
+    <img src="suvarnprashn1.jpg" alt="Suvarnprashn Bottle" />
   </div>
 </header>
 
 <section>
-  <h2 class="lang-en active-lang" style="color: #6b8e23;">Why Choose Suvarna Prashan?</h2>
-  <h2 class="lang-gu" style="color: #6b8e23;">સુવર્ણ પ્રાશન શા માટે પસંદ કરવું?</h2>
+  <div class="info-banner">
+    <h4 class="lang-en active-lang">🌟 About Suvarnaprashan</h4>
+    <h4 class="lang-gu">🌟 સુવર્ણપ્રાશન વિશે</h4>
+    <p class="lang-en active-lang">
+      Suvarnaprashan is an ancient Ayurvedic practice containing gold ash (Swarna Bhasma), honey, and medicinal herbs. This time-tested formula boosts overall physical and mental health, enhances immunity, improves intelligence and digestion, and builds physical strength. Suitable for children from birth to 16 years old.
+    </p>
+    <p class="lang-gu">
+      સુવર્ણપ્રાશન એક પ્રાચીન આયુર્વેદિક પ્રથા છે જેમાં સોનાની રાખ (સ્વર્ણ ભસ્મ), મધ અને ઔષધીય વનસ્પતિઓ હોય છે. આ સમય-પરીક્ષિત ફોર્મ્યુલા શારીરિક અને માનસિક સ્વાસ્થ્ય, રોગપ્રતિકારક શક્તિ, બુદ્ધિ અને પાચનશક્તિ સુધારે છે. જન્મથી 16 વર્ષ સુધીના બાળકો માટે યોગ્ય.
+    </p>
+  </div>
 
-  <ul class="lang-en active-lang" style="color: #333;">
-    <li>Boosts natural immunity & infection resistance</li>
-    <li>Enhances brain function and memory power</li>
-    <li>Improves digestion and overall health</li>
-    <li>100% Ayurvedic, safe for kids</li>
-  </ul>
+  <h2 class="section-title lang-en active-lang">Why Choose Suvarna Prashan?</h2>
+  <h2 class="section-title lang-gu">સુવર્ણ પ્રાશન શા માટે પસંદ કરવું?</h2>
 
-  <ul class="lang-gu" style="color: #333;">
-    <li>પ્રાકૃતિક રોગપ્રતિરોધક શક્તિ અને સંક્રમણ પ્રતિકાર વધારેછે</li>
-    <li>મગજની કાર્યક્ષમતા અને સ્મૃતિ શક્તિ વધારાય છે</li>
-    <li>પાચનશક્તિ અને સમગ્ર આરોગ્ય સુધારે છે</li>
-    <li>૧૦૦% આયુર્વેદિક, બાળકો માટે સલામત</li>
-  </ul>
-</section>
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="benefit-icon">🛡️</div>
+      <h3 class="lang-en active-lang">Immunity Boost</h3>
+      <h3 class="lang-gu">રોગપ્રતિરોધક શક્તિ</h3>
+      <p class="lang-en active-lang">Strengthens natural immunity and increases resistance to infections</p>
+      <p class="lang-gu">પ્રાકૃતિક રોગપ્રતિરોધક શક્તિ અને સંક્રમણ પ્રતિકાર વધારે છે</p>
+    </div>
 
-<section class="gallery text-center">
-  <h2 class="lang-en active-lang" style="color: #6b8e23;">Product Gallery</h2>
-  <h2 class="lang-gu" style="color: #6b8e23;">પ્રોડક્ટ ગેલરી</h2>
-  <div>
-    <img src="suvarnprashn1.jpg" alt="Suvarnprashn Bottle" />
-    <img src="suvarnprashn2.jpg" alt="Product Packaging" />
-    <img src="suvarnprashn3.jpg" alt="Usage Demo" />
-    <img src="suvarnprashn4.jpg" alt="Gold Drops" />
+    <div class="benefit-card">
+      <div class="benefit-icon">🧠</div>
+      <h3 class="lang-en active-lang">Brain Power</h3>
+      <h3 class="lang-gu">મગજની શક્તિ</h3>
+      <p class="lang-en active-lang">Enhances brain function, memory, and cognitive abilities</p>
+      <p class="lang-gu">મગજની કાર્યક્ષમતા, સ્મૃતિ અને જ્ઞાનાત્મક ક્ષમતાઓ વધારે છે</p>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon">💪</div>
+      <h3 class="lang-en active-lang">Physical Strength</h3>
+      <h3 class="lang-gu">શારીરિક શક્તિ</h3>
+      <p class="lang-en active-lang">Builds physical strength and overall vitality</p>
+      <p class="lang-gu">શારીરિક શક્તિ અને એકંદર જોમ વધારે છે</p>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon">🌿</div>
+      <h3 class="lang-en active-lang">100% Ayurvedic</h3>
+      <h3 class="lang-gu">100% આયુર્વેદિક</h3>
+      <p class="lang-en active-lang">Pure Ayurvedic formula with gold ash, completely safe for kids</p>
+      <p class="lang-gu">સ્વર્ણ ભસ્મ સાથે શુદ્ધ આયુર્વેદિક ફોર્મ્યુલા, બાળકો માટે સંપૂર્ણ સલામત</p>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon">🍽️</div>
+      <h3 class="lang-en active-lang">Better Digestion</h3>
+      <h3 class="lang-gu">પાચનશક્તિ</h3>
+      <p class="lang-en active-lang">Improves digestion and overall gut health</p>
+      <p class="lang-gu">પાચનક્રિયા અને આંતરડાના સ્વાસ્થ્યમાં સુધારો કરે છે</p>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon">👶</div>
+      <h3 class="lang-en active-lang">Age 0-16 Years</h3>
+      <h3 class="lang-gu">વય 0-16 વર્ષ</h3>
+      <p class="lang-en active-lang">Safe for children from birth to 16 years of age</p>
+      <p class="lang-gu">જન્મથી 16 વર્ષ સુધીના બાળકો માટે સુરક્ષિત</p>
+    </div>
   </div>
 </section>
 
-<section class="reviews container">
-  <h2 class="lang-en active-lang" style="color: #6b8e23;">Parent Reviews</h2>
-  <h2 class="lang-gu" style="color: #6b8e23;">પેરેંટ્સના રિવ્યુ</h2>
+<section class="gallery">
+  <h2 class="section-title lang-en active-lang">Product Gallery</h2>
+  <h2 class="section-title lang-gu">પ્રોડક્ટ ગેલરી</h2>
+  
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="suvarnprashn1.jpg" alt="Suvarnprashn Bottle" />
+    </div>
+    <div class="gallery-item">
+      <img src="suvarnprashn2.jpg" alt="Product Packaging" />
+    </div>
+    <div class="gallery-item">
+      <img src="suvarnprashn3.jpg" alt="Usage Demo" />
+    </div>
+    <div class="gallery-item">
+      <img src="suvarnprashn4.jpg" alt="Gold Drops" />
+    </div>
+  </div>
+</section>
+
+<section class="reviews-section">
+  <h2 class="section-title lang-en active-lang">What Parents Say</h2>
+  <h2 class="section-title lang-gu">પેરેંટ્સના રિવ્યુ</h2>
 
   <div class="review-box lang-en active-lang">
-    <p><strong>Priya Sharma:</strong> "My child’s health and immunity improved remarkably using Suvarnprashn."</p>
+    <p><strong>⭐⭐⭐⭐⭐ Priya Sharma</strong><br>
+    "My child's health and immunity improved remarkably after using Suvarnaprashan. Highly recommend this to all parents!"</p>
   </div>
   <div class="review-box lang-gu">
-    <p><strong>પ્રિયા શર્મા:</strong> "મારા બાળકની તબિયત અને રોગપ્રતિરોધક શક્તિ સુવર્ણ પ્રાશન ઉપયોગ પછી ખુબ સુધરી."</p>
+    <p><strong>⭐⭐⭐⭐⭐ પ્રિયા શર્મા</strong><br>
+    "સુવર્ણ પ્રાશન ઉપયોગ પછી મારા બાળકની તબિયત અને રોગપ્રતિરોધક શક્તિ ખૂબ સુધરી. બધા પેરેંટ્સને ભલામણ કરું છું!"</p>
   </div>
 
   <div class="review-box lang-en active-lang">
-    <p><strong>Ramesh Patel:</strong> "Highly effective product, my child’s concentration has improved."</p>
+    <p><strong>⭐⭐⭐⭐⭐ Ramesh Patel</strong><br>
+    "Highly effective product! My child's concentration and focus have improved significantly. Worth every penny."</p>
   </div>
   <div class="review-box lang-gu">
-    <p><strong>રમેશ પટેલ:</strong> "અત્યંત અસરકારક, મારા બાળકની એકાગ્રતા સુધરી છે."</p>
+    <p><strong>⭐⭐⭐⭐⭐ રમેશ પટેલ</strong><br>
+    "અત્યંત અસરકારક ઉત્પાદન! મારા બાળકની એકાગ્રતા અને ધ્યાન નોંધપાત્ર રીતે સુધર્યું છે. દરેક પૈસાની કિંમત છે."</p>
+  </div>
+
+  <div class="review-box lang-en active-lang">
+    <p><strong>⭐⭐⭐⭐⭐ Anjali Mehta</strong><br>
+    "Amazing Ayurvedic product! My daughter rarely falls sick now. The gold ash formula really works wonders."</p>
+  </div>
+  <div class="review-box lang-gu">
+    <p><strong>⭐⭐⭐⭐⭐ અંજલિ મહેતા</strong><br>
+    "આશ્ચર્યજનક આયુર્વેદિક ઉત્પાદન! મારી પુત્રી હવે ભાગ્યે જ બીમાર પડે છે. સોનાની રાખનું ફોર્મ્યુલા ખરેખર ચમત્કાર કરે છે."</p>
   </div>
 </section>
 
-<section class="register container">
-  <h2 class="lang-en active-lang" style="color: #6b8e23;">Register Now</h2>
-  <h2 class="lang-gu" style="color: #6b8e23;">હવે રજિસ્ટર કરો</h2>
+<section class="register-section">
+  <h2 class="section-title lang-en active-lang">Register Now</h2>
+  <h2 class="section-title lang-gu">હવે રજિસ્ટર કરો</h2>
+  
   <form name="suvarnaForm" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="suvarnaForm" />
-    <input type="text" name="buyerName" placeholder="Your Name / તમારું નામ" required\n />
-    <input type="text" name="childName" placeholder="Child Name / બાળકનું નામ" required \n/>
-    <input type="number" name="childAge" placeholder="Child Age / બાળકની ઉંમર" required\n />
+    <input type="text" name="buyerName" placeholder="Your Name / તમારું નામ" required />
+    <input type="text" name="childName" placeholder="Child Name / બાળકનું નામ" required />
+    <input type="number" name="childAge" placeholder="Child Age / બાળકની ઉંમર" required />
     <textarea name="message" rows="3" placeholder="Message / સંદેશ (Optional)"></textarea>
     <input type="tel" name="phone" placeholder="Phone Number / ફોન નંબર" required />
-    <button type="submit" class="btn-submit">Register Now / હવે રજિસ્ટર કરો</button>
+    <button type="submit" class="btn-submit">
+      <span class="lang-en active-lang">Register Now</span>
+      <span class="lang-gu">હવે રજિસ્ટર કરો</span>
+    </button>
   </form>
 </section>
 
 <footer>
-  © 2025 Super Shreeved | Ayurvardha Wellness | Traditional Ayurvedic Care<br />
-  Contact: +91-9157572163 | Email: shreeved134@gmail.com<br />
-  Follow us on <a href="https://www.instagram.com/shreeved__?igsh=aTR4MDQzMjA1cWJr" style="color: black; text-decoration: underline;" target="_blank">Instagram @shreeved__</a>
+  <p style="font-size: 1.2rem; margin-bottom: 15px;"><strong>© 2025 Super Shreeved | Ayurvardha Wellness</strong></p>
+  <p style="margin-bottom: 10px;">Traditional Ayurvedic Care for Your Child's Health</p>
+  <p style="margin-bottom: 10px;">📞 Contact: <a href="tel:+919157572163">+91-9157572163</a> | 📧 Email: <a href="mailto:shreeved134@gmail.com">shreeved134@gmail.com</a></p>
+  <p>Follow us on <a href="https://www.instagram.com/shreeved__?igsh=aTR4MDQzMjA1cWJr" target="_blank">Instagram @shreeved__</a></p>
 </footer>
 
 <script>
@@ -165,11 +590,9 @@
     }
   }
 
-  // Default to English
   setLanguage('en');
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
