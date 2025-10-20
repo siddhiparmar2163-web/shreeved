@@ -549,18 +549,24 @@
   <h2 class="section-title lang-en active-lang">Register Now</h2>
   <h2 class="section-title lang-gu">હવે રજિસ્ટર કરો</h2>
   
-  <form name="suvarnaForm" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="suvarnaForm" />
-    <input type="text" name="buyerName" placeholder="Your Name / તમારું નામ" required />
-    <input type="text" name="childName" placeholder="Child Name / બાળકનું નામ" required />
-    <input type="number" name="childAge" placeholder="Child Age / બાળકની ઉંમર" required />
-    <textarea name="message" rows="3" placeholder="Message / સંદેશ (Optional)"></textarea>
-    <input type="tel" name="phone" placeholder="Phone Number / ફોન નંબર" required />
-    <button type="submit" class="btn-submit">
-      <span class="lang-en active-lang">Register Now</span>
-      <span class="lang-gu">હવે રજિસ્ટર કરો</span>
+  <div style="text-align: center;">
+    <p class="lang-en active-lang" style="margin-bottom: 30px; color: #666; font-size: 1.1rem;">
+      Fill out our registration form to get started with Suvarnaprashan for your child
+    </p>
+    <p class="lang-gu" style="margin-bottom: 30px; color: #666; font-size: 1.1rem;">
+      તમારા બાળક માટે સુવર્ણપ્રાશન શરૂ કરવા માટે અમારું રજિસ્ટ્રેશન ફોર્મ ભરો
+    </p>
+    
+    <button class="btn-submit" onclick="window.open('YOUR_GOOGLE_FORM_LINK_HERE', '_blank')" style="display: inline-block; width: auto; min-width: 300px;">
+      <span class="lang-en active-lang">📝 Open Registration Form</span>
+      <span class="lang-gu">📝 રજિસ્ટ્રેશન ફોર્મ ખોલો</span>
     </button>
-  </form>
+    
+    <p style="margin-top: 20px; color: #999; font-size: 0.9rem;">
+      <span class="lang-en active-lang">The form will open in a new tab</span>
+      <span class="lang-gu">ફોર્મ નવા ટેબમાં ખુલશે</span>
+    </p>
+  </div>
 </section>
 
 <footer>
